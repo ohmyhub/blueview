@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blueview"
+version = "0.1.0"
+description = "Read Bluebeam Revu markup data from local PDF files"
+requires-python = ">=3.10"
+dependencies = [
+    "PyMuPDF>=1.24",
+    "pikepdf>=9.0",
+    "openpyxl>=3.1",
+]
+
+[project.scripts]
+blueview = "blueview.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["blueview*"]

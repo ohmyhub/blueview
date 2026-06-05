@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+samples/
+*.pdf
+*.png
+*.xlsx
+*.csv
